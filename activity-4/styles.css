@@ -1,0 +1,159 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #0d0d0d; 
+    color: #ffffff; 
+}
+
+
+.todo-container {
+    background-color: #1a1a1a; 
+    border-radius: 12px;
+    padding: 30px;
+    margin: 25px 0;
+    box-shadow: 0 4px 15px rgba
+}
+
+.input-section {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #333333;
+}
+
+.input-section h2 {
+    margin-bottom: 15px;
+    font-size: 1.4em;
+    color: #00aaff; 
+}
+
+#taskInput {
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 2px solid #555555;
+    border-radius: 6px;
+    width: 300px;
+    margin-right: 12px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    transition: border-color 0.3s ease;
+}
+
+#taskInput:focus {
+    outline: none;
+    border-color: #00aaff; 
+}
+
+button {
+    padding: 12px 22px;
+    font-size: 16px;
+    background-color: #00aaff; /* blue button */
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #0088cc; /* darker blue hover */
+    transform: translateY(-1px);
+}
+
+#todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 16px;
+    margin: 10px 0;
+    border-radius: 8px;
+    background-color: #262626; /* dark gray for tasks */
+    border: 1px solid #444444;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.task-item:hover {
+    background-color: #333333;
+    transform: translateY(-1px);
+}
+
+.task-item.done {
+    background-color: #28a745; /* green done */
+    color: #ffffff;
+    text-decoration: line-through;
+    opacity: 0.85;
+}
+
+.task-item.done:hover {
+    background-color: #218838;
+}
+
+.task-text {
+    flex-grow: 1;
+}
+
+.task-status {
+    font-size: 0.85em;
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 15px;
+    margin-left: 10px;
+}
+
+.status-pending {
+    background-color: #ffd700; /* gold */
+    color: #000000;
+}
+
+.status-done {
+    background-color: #28a745; /* green */
+    color: #ffffff;
+}
+
+.stats-section {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 2px solid #333333;
+    text-align: center;
+}
+
+#taskStats {
+    font-size: 1.1em;
+    color: #00aaff; /* blue text for stats */
+}
+
+#output {
+    margin-top: 25px;
+    padding: 20px;
+    background-color: #1b3b1b; /* dark green output box */
+    border-radius: 8px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.6);
+    color: #ffffff;
+}
+
+/* =========================
+   Responsive Design
+========================= */
+@media (max-width: 600px) {
+    #taskInput, button {
+        width: 100%;
+        margin: 8px 0;
+    }
+    .task-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .task-status {
+        margin-left: 0;
+        margin-top: 5px;
+    }
+}
