@@ -1,0 +1,125 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #0f172a; /* navy background */
+  color: white;
+}
+
+.math-widget {
+  background-color: #111827; /* dark navy/black */
+  border-radius: 15px;
+  padding: 30px;
+  margin: 20px auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+
+.input-section {
+  margin-bottom: 25px;
+}
+
+.input-group {
+  margin: 15px 0;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #f8f6f6; /* soft white */
+}
+
+.input-group input {
+  width: 200px;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #14b8a6; /* teal border */
+  border-radius: 8px;
+  text-align: center;
+  background-color: #1f2937; /* dark background */
+  color: #14b8a6;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #8b5cf6; /* purple glow */
+}
+
+.operations {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin: 25px 0;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+  padding: 15px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.operation {
+  background-color: #14b8a6; /* teal */
+  color: #0f172a; /* navy text */
+  padding: 20px;
+  font-size: 18px;
+}
+
+.operation:hover {
+  background-color: #0d9488; /* darker teal */
+}
+
+.clear {
+  background-color: #f2062d; /* purple */
+  color: white;
+  margin-top: 20px;
+}
+
+.clear:hover {
+  background-color: #7c3aed; /* darker purple */
+}
+
+.result {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 20px;
+  margin: 20px 0;
+  background-color: #1f2937; /* dark navy */
+  border-radius: 8px;
+  border: 2px solid #14b8a6; /* teal border */
+  min-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.result.success {
+  background-color: #0f766e; /* deep teal */
+  border-color: #14b8a6;
+  color: white;
+}
+
+.result.error {
+  background-color: #4c1d95; 
+  border-color: #8b5cf6;
+  color: white;
+}
